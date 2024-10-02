@@ -19,4 +19,8 @@ public class Book {
     @ManyToOne
     @JoinColumn(name = "publisher_id")
     private Publisher publisher;
+
+    @OneToOne
+    @JoinColumn(name = "author_id")
+    private Author author;
 }
